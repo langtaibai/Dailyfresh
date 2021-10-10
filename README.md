@@ -30,18 +30,4 @@ Trackerd服务 sudo /usr/bin/fdfs_trackerd /etc/fdfs/tracker.conf start
 
   storge服务
   sudo /usr/bin/fdfs_storaged /etc/fdfs/storage.conf start
-  ```
-nginx
-
-启动nginx
-sudo /usr/local/nginx/sbin/nginx
-重启nginx
-sudo /usr/local/nginx/sbin/nginx -s reload
-建立索引文件--搜索引擎
-新环境需要配置jieba分词,生成whoose_cn_backend文件
-
-python manage.py rebuild_index
-mysql事务隔离级别设置
-
-sudo vim /etc/mysql/mysql.conf.d/mysql.cnf
-transaction-isolation = READ-COMMITTED (读已提交)
+ 
